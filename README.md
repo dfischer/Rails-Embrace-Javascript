@@ -4,7 +4,7 @@ Similar to how www.todomvc.com shows how to use various frameworks. Rails Embrac
 
 This project is in the very early stages. Right now we're brainstorming possible ways to handle this project.
 
-## Overall project goal: Build a billing application.
+## Overall project goal: Build a timesheet application.
 
 We want the application to be complex enough that it won't be as basic as using one model, like todomvc.
 
@@ -26,6 +26,24 @@ Two options.
 
 1) Rails as an api as one app. Each "JS Framework" as a Rails app + that JS framework.
 
+```
+timesheet-api
+timesheet-ember
+timesheet-angular
+timesheet-batman
+timesheet-omakase # the rails way, turbolinks, etc...
+```
+
 2) Rails back-end as an engine. Each JS framework loaded on top of that engine.
+```
+timesheet-core
+timesheet-ember
+timesheet-angular
+timesheet-batman
+timesheet-omakase # the rails way, turbolinks, etc...
+```
 
 Number 1 is probably more likely to be a real-world scenario. Why have two apps? Why have the JS framework + Rails? So you get the rails/ruby eco system.
+If we wanted to an app that is just the omakase way, it seems only #2 is an option?
+
+Repo will contain a folder for each implementation.
