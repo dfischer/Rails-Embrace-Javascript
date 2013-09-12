@@ -22,7 +22,7 @@ A user clicks new project. They're already working with the project and they can
 
 # Architecture:
 
-Two options.
+## Back-end + Front-end architecture for examples
 
 1) Rails as an api as one app. Each "JS Framework" as a Rails app + that JS framework.
 
@@ -49,3 +49,16 @@ Number 1 is probably more likely to be a real-world scenario. Why have two apps?
 If we wanted to an app that is just the omakase way, it seems only #2 is an option?
 
 Repo will contain a folder for each implementation.
+
+## Back-end architecture modeling
+
+```
+Project
+  has_many :people
+Person
+  belongs_to :project
+  has_many :time_logs
+TimeLog
+  belongs_to :project
+  belongs_to :person
+```
