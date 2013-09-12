@@ -4,13 +4,13 @@ Similar to how www.todomvc.com shows how to use various frameworks. Rails Embrac
 
 This project is in the very early stages. Right now we're brainstorming possible ways to handle this project.
 
-Overall project goal: Build a billing application.
+## Overall project goal: Build a billing application.
 
 We want the application to be complex enough that it won't be as basic as using one model, like todomvc.
 
 We want the application to use as least 3 models during interaction.
 
-Proposed flow:
+# Proposed flow:
 
 When interacting with the application, a user can create a project.
 A user should be able to associate people to that project.
@@ -20,7 +20,7 @@ The idea is to do as much of this on one page as possible.
 
 A user clicks new project. They're already working with the project and they can dynamically add people to the project and immediately record hours against that person.
 
-Architecture:
+# Architecture:
 
 Two options.
 
