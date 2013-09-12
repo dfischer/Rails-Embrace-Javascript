@@ -16,7 +16,7 @@ When interacting with the application, a user can create a project.
 A user should be able to associate people to that project.
 Each person listed on that project should have the ability to "record timesheets" per a day, and up to multiple times a day.
 
-The idea is to do as much of this on one page as possible. 
+The idea is to do as much of this on one page as possible. We want to eliminate the "new/edit" views as being separate views. Everything should be inline and happen on the project page itself. In place editing of fields. Dynamically adding people and time_logs without refreshing.
 
 A user clicks new project. They're already working with the project and they can dynamically add people to the project and immediately record hours against that person.
 
