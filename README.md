@@ -28,4 +28,4 @@ Two options.
 
 2) Rails back-end as an engine. Each JS framework loaded on top of that engine.
 
-#1 is probably more likely to be a real-world scenario. Why have two apps? Why have the JS framework + Rails? So you get the rails/ruby eco system.
+Number 1 is probably more likely to be a real-world scenario. Why have two apps? Why have the JS framework + Rails? So you get the rails/ruby eco system.
