@@ -50,6 +50,12 @@ If we wanted to an app that is just the omakase way, it seems only #2 is an opti
 
 Repo will contain a folder for each implementation.
 
+Reasons to have JS + Rails app:
+
+1. Rails Ecosystem
+2. Coffeescript
+3. Spider-friendly views (can output on initial load from server-side).
+
 ## Back-end architecture modeling
 
 ```
