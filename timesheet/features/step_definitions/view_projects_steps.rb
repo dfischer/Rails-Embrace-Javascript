@@ -1,4 +1,13 @@
 Given(/^there are no projects$/) do
+  @projects = []
+end
+
+Project = Struct.new :title, :description
+Given(/^there are some projects$/) do
+  @projects = [
+    Project.new('Project One', 'First Project'), 
+    Project.new('Project Two', 'Second Project')
+  ]
 end
 
 When(/^I go to the all projects end point$/) do
@@ -6,12 +15,9 @@ When(/^I go to the all projects end point$/) do
 end
 
 Then(/^I should retrieve no projects$/) do
-  ActiveSupport::JSON.decode(page.source).fetch('projects').should be_empty
-end
-
-Given(/^there are some projects$/) do
+ @projects.should be_empty 
 end
 
 Then(/^I should retrieve all projects$/) do
-    pending # express the regexp above with the code you wish you had
+  @projects.should_not be_empty
 end

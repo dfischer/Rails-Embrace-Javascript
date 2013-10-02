@@ -4,10 +4,11 @@ gem 'rails', '3.2.14'
 
 gem 'sqlite3'
 
-group :test do 
+group :test, :development do 
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner', '<= 1.0.3'
+  gem 'pry'
 end
 
 group :assets do
