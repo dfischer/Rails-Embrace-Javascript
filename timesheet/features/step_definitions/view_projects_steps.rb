@@ -6,11 +6,8 @@ Then(/^I should retrieve no projects$/) do
   @projects.should be_empty
 end
 
-Project = Struct.new :title, :description
 Given(/^there are projects$/) do
-  @projects = [
-    Project.new('Project 1', 'Project description1')
-  ]
+  CreateProject.new(title:'Project 1', description:'Project description 1').call
 end
 
 Then(/^I should retrieve all projects$/) do

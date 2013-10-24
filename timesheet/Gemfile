@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 1.2'
 group :test do 
   gem 'cucumber-rails', :require => false
   gem 'rspec-rails'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '1.0.1'
 end
 
 group :doc do
