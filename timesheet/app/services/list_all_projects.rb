@@ -1,11 +1,11 @@
 class ListAllProjects
 
-  def initialize(repository=Project)
-    @repository = repository
+  def initialize(project_repository)
+    @project_repository = project_repository
   end
 
   def call
-    @repository.list_all
+    @project_repository.list_all
   end
 
 end

@@ -1,5 +1,5 @@
 When(/^I ask for all the projects$/) do
-  @projects = ListAllProjects.new.call
+  @projects = ListAllProjects.new(Project).call
 end
 
 Then(/^I should retrieve no projects$/) do
