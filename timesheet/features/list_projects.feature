@@ -6,7 +6,7 @@ Feature: List projects
   Scenario: There are no projects created
     Given there is no projects created
     When I visit the list projects page
-    Then I should see "There is no projects"
+    Then I should see "There are no projects"
 
   Scenario: There are some projects created
     Given the following projects exists
