@@ -3,9 +3,9 @@ require 'spec_helper'
 describe ProjectsController do 
 
   describe 'GET /index' do 
+    let(:projects) { [double(:project)] }
     it 'assigns a new project list' do 
-      projects = double :list_projects
-      stub_const('Timesheet::Projects::ListAll', double(list_all:projects))
+      Timesheet::Projects::ListAll.stub(:list_all).with(Project).and_return(projects)
       get :index
       expect(assigns(:projects)).to eql projects
     end
